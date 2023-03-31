@@ -43,11 +43,11 @@
                         </div>
                     </div>
                     <div class="phone-text">
-                        Есть вопросы?<br>Свяжитесь с нами
+                        Есть вопросы?<br><a class="feedback-btn-open" href="coment.html#feedback">Свяжитесь с нами</a>
                     </div>
                 </div>
                 <div class="btn">
-                    <a class="button" href="#">Сделать заказ</a>
+                    <a class="button" href="coment.html#order">Сделать заказ</a>
                 </div>
             </div> 
             <div class="header-down">
@@ -60,7 +60,104 @@
                         ПРОТЕИНОВЫЕ БАТОНЧИКИ
                     </div>
                     <div class="header-btn">
-                        <a class="header-button" href="#">ЗА БАТОНЧИКАМИ</a>
+                        <a class="header-button" href="coment.html#menu">ЗА БАТОНЧИКАМИ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="feedback" class="modal-feedback">
+        <div class="feedback-dialog">
+            <div class="feedback-content">
+                <div class="feedback-header">
+                    <h3 class="feedback-title">Связаться с нами</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="feedback-body">    
+                    <div class="feedback-form">
+                    <form id="contact" action="#" method="post" name="contact">
+                        <div class="feedback-form-data">
+                            <div class="feedback-form-item">
+                                <input id="name-feedback" name="name" type="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="feedback-form-item">
+                                <input id="phone-feedback" name="phone" type="phone" placeholder="Ваш телефон"> 
+                            </div>
+                            <div class="feedback-form-item">
+                                <input id="email-feedback" name="email" type="email" placeholder="Ваш e-mail">
+                            </div>      
+                        </div>
+                        <div class="feedback-message">
+                            <textarea id="msg-feedback" name="msg" placeholder="Ваше сообщение:"></textarea>
+                        </div>
+                        <a class="feedback-button">Отправить</a>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="order" class="modal-feedback">
+        <div class="feedback-dialog">
+            <div class="feedback-content">
+                <div class="feedback-header">
+                    <h3 class="feedback-title">Оформление заказа</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="feedback-body">    
+                    <div class="feedback-form">
+                        <form>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <div class="order-img">
+                                        <img src="img/bar1.png" alt="">
+                                    </div>
+                                    <div class="order-name">
+                                        CRUNCH
+                                    </div>
+                                    <div class="order-item-num">
+                                        <input class="order-num" name="num1" type="number" placeholder="Количество">
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-img">
+                                        <img src="img/bar2.png" alt="">
+                                    </div>
+                                    <div class="order-name">
+                                        CRISP
+                                    </div>
+                                    <div class="order-item-num">
+                                        <input class="order-num" name="num2" type="number" placeholder="Количество">
+                                    </div>
+                                </div>
+                                <div class="order-item">
+                                    <div class="order-img">
+                                        <img src="img/bar3.png" alt="">
+                                    </div>
+                                    <div class="order-name">
+                                        NIGH
+                                    </div>
+                                    <div class="order-item-num">
+                                        <input class="order-num" name="num3" type="number" placeholder="Количество">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-form-data">
+                                <div class="order-form-item">
+                                    <input id="name-order" name="name" type="name" placeholder="Ваше имя">
+                                </div>
+                                <div class="order-form-item">
+                                    <input id="phone-order" name="phone" type="phone" placeholder="Ваш телефон"> 
+                                </div>
+                                <div class="order-form-item">
+                                    <input id="adress-order" name="address" type="address" placeholder="Адрес доставки">
+                                </div>      
+                            </div>
+                            <div class="order-btn">
+                                <a class="order-button">Оформить заказ</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -152,7 +249,15 @@
                 </div>
                 <div class="right">
                     <div class="right-button">
-                        <a class="right-btn" href="#">Оформить заказ</a>
+                        <a class="right-btn" href="coment.html#order">Оформить заказ</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Поставщики</button>
+                            <div class="dropdown-content">
+                                <a href="#">CRUNCH</a>
+                                <a href="#">CRISP</a>
+                                <a href="#">NIGH</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,8 +280,38 @@
             <div class='coment-name'>
                 Стич
             </div>
+            <div class="btnComentActive display-none">
+                <div class="coment-items"> 
+                    <div class='coment-text'>
+                        Я фанат данного сайта. Я мастер спорта по гиревому вида спорта и все мои успехи на 50% принадлежат данной организации. Благодаря протеиновым батончикам, заказанные на этом сайте я стал сильным и способным спортсменом! Спасибо Вам больше EAT IT!
+                    </div>
+                    <div class='coment-image'>
+                        <img class='coment-img' src='img/face3.png'>
+                    </div>
+                    <div class="coment-type">
+                        Ценитель батончиков
+                    </div>
+                    <div class='coment-name'>
+                        Джамба
+                    </div>
+                </div>
+                <div class="coment-items"> 
+                    <div class='coment-text'>
+                        Я фанат данного сайта. Я мастер спорта по гиревому вида спорта и все мои успехи на 50% принадлежат данной организации. Благодаря протеиновым батончикам, заказанные на этом сайте я стал сильным и способным спортсменом! Спасибо Вам больше EAT IT!
+                    </div>
+                    <div class='coment-image'>
+                        <img class='coment-img' src='img/face1.png'>
+                    </div>
+                    <div class="coment-type">
+                        Мастер спорта
+                    </div>
+                    <div class='coment-name'>
+                        Лило
+                    </div>
+                </div>
+            </div>
             <div class="coment-button">
-                <a class="coment-btn" href="#">Показать все отзывы</a>
+                <a class="coment-btn">Показать все отзывы</a>
             </div>
         </div> 
     </div>
@@ -204,7 +339,7 @@
                         Популярные батончики <br>с множеством вкусов
                     </div>
                     <div class="menu-button">
-                        <a class="menu-btn" href="#">ЗАКАЗАТЬ</a>
+                        <a class="menu-btn" href="coment.html#order">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -225,7 +360,7 @@
                         Популярные батончики <br>с множеством вкусов
                     </div>
                     <div class="menu-button">
-                        <a class="menu-btn" href="#">ЗАКАЗАТЬ</a>
+                        <a class="menu-btn" href="coment.html#order">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
                 <div class="menu-item">
@@ -246,7 +381,7 @@
                         Популярные батончики <br>с множеством вкусов
                     </div>
                     <div class="menu-button">
-                        <a class="menu-btn" href="#">ЗАКАЗАТЬ</a>
+                        <a class="menu-btn" href="coment.html#order">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
             </div>
@@ -275,5 +410,6 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
