@@ -52,7 +52,7 @@ feedbackButton.addEventListener('click', (e) => {
         phone.classList.remove("error");
     }
     
-    let pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    let pattern = /^[A-Za-z0-9]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     if (!pattern.test(email.value)) {
         valid = false;
         email.classList.add("error");
